@@ -4,8 +4,23 @@ author: Soyeon Jin
 ---
 This is the assignment for KODAQS Module 4. 
 
-You can run the script with run.sh. 
+<!-- You can run the script with run.sh.  -->
 
-The thing is, there is only one script file that run.sh is not that necessary. 
+<!-- The thing is, there is only one script file that run.sh is not that necessary.  -->
 
-I tried to use Jupyterlab to do this assignment as it suggests, but the thing is, I kept going back and forth with terminal. Still long way to go... 
+<!-- I tried to use Jupyterlab to do this assignment as it suggests, but the thing is, I kept going back and forth with terminal. Still long way to go... -->
+
+# local
+
+Restore the local environment
+
+```r
+library(renv)
+
+renv::restore()
+```
+
+# Mybinder
+
+Launchable on mybinder
+

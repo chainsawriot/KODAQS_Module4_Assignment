@@ -42,7 +42,7 @@ top_countries$region[top_countries$region == "South Korea"] <- "South Korea"
 map_data_merged <- world_map %>%
   left_join(top_countries, by = "region")
 
-ggplot(map_data_merged, aes(x = long, y = lat, group = group, fill = n)) +
+fig <- ggplot(map_data_merged, aes(x = long, y = lat, group = group, fill = n)) +
   geom_polygon(color = "white", linewidth = 0.1) +
   scale_fill_gradient(low = "lightyellow", high = "darkred", 
                       na.value = "lightgray",
@@ -55,3 +55,4 @@ ggplot(map_data_merged, aes(x = long, y = lat, group = group, fill = n)) +
         axis.ticks = element_blank(),
         panel.grid = element_blank())
 
+ggsave("fig.pdf", fig, width = 15, height = 8)
