@@ -1,15 +1,5 @@
 # Put your own data folder 
-datapath<- file.path("/Users/sojin/Downloads/KODAQS_Module4_Assignment_Jin/")
-
-# Making virtual environment 
-renv::init()
-
-# package version management
-# datapath <- file.path("/Users/sojin/Downloads/KODAQS_Module4_Assignment_Jin/")
-# temp <- file.path(datapath, "install.R") 
-# source(temp)
-
-renv::snapshot()
+datapath<- here::here()
 
 netflix_data_path<- file.path(datapath, "netflix_titles.csv") 
 
